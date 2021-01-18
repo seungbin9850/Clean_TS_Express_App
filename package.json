@@ -1,0 +1,25 @@
+{
+  "name": "clean_ts_express_app",
+  "version": "1.0.0",
+  "description": "Typescript Clean Architecture App with Express",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seungbin9850/Clean_TS_Express_App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seungbin9850/Clean_TS_Express_App/issues"
+  },
+  "homepage": "https://github.com/seungbin9850/Clean_TS_Express_App#readme",
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  },
+  "_moduleAlias": {
+    "@": "src"
+  }
+}
