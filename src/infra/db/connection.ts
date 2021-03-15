@@ -1,6 +1,6 @@
 import { createConnection } from "typeorm";
 import connectionOptions from "@/../ormconfig";
 
-export default async () => {
+export const connection = async () => {
   await createConnection(connectionOptions);
 };
