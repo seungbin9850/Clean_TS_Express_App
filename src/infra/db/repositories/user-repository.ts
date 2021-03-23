@@ -1,5 +1,5 @@
 import { FindUserRepository } from "@/data/protocols/db/repositories/find-user-repository";
-import { User } from "@/infra/db";
+import { User } from "@/domain/entities";
 import { EntityRepository, getRepository } from "typeorm";
 
 @EntityRepository(User)
