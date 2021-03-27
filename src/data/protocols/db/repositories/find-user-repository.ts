@@ -1,5 +1,5 @@
 import { User } from "@/domain/entities";
 
-export class FindUserRepository {
+export interface FindUserRepository {
   findOne: (id: string) => Promise<User>;
 }
