@@ -1,5 +1,6 @@
 import { HttpResponse } from "@/presentation/protocols";
 import { ServerError, UnauthorizedError } from "@/presentation/errors";
+import { AlreadyExistsError } from "../errors/already-exists";
 
 export const badRequest = (error: Error): HttpResponse => ({
   statusCode: 400,
@@ -14,6 +15,11 @@ export const unauthorized = (): HttpResponse => ({
 export const forbidden = (error: Error): HttpResponse => ({
   statusCode: 403,
   body: error,
+});
+
+export const alreadyExistsData = (): HttpResponse => ({
+  statusCode: 409,
+  body: new AlreadyExistsError(),
 });
 
 export const serverError = (error: Error): HttpResponse => ({
